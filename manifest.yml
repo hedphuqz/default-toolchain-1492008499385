@@ -3,8 +3,6 @@ applications:
 - memory: 512M
   instances: 1
   path: .
-  command: node index --production
+  command: node index
   env:
     NODE_ENV: production
-  services:
-  - ghost-mysql-db
