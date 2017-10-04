@@ -1,8 +1,10 @@
 ---
 applications:
-- memory: 512M
+- path: .
+  memory: 64M
   instances: 1
-  path: .
-  command: node index
-  env:
-    NODE_ENV: production
+  domain: mybluemix.net
+  name: eagle-ally-info
+  host: eagle-ally-info
+  disk_quota: 256M
+  command: npm start
